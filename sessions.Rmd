@@ -191,6 +191,8 @@ div(
 
 #### 2019 - 2020
 
+- Spatial data with packages {sf} and {raster}: [presentation](https://ihough.github.io/talk_2019-10_geospatial) and [mapping_demo.R](https://github.com/ihough/talk_2019-10_geospatial/blob/master/mapping_demo.R)
+
 - [Reproducible research in R](https://annakrystalli.me/talks/r-in-repro-research.html)
 
 #### 2018 - 2019
