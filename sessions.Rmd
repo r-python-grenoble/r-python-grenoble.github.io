@@ -2,15 +2,15 @@
 title: "Working sessions"
 ---
 
-Next session: **Git with R for beginners, January 28th 2021 at 5PM on Zoom**. 
+Next session: **Machine learning in R, February 25th 2021 at 5PM on Zoom**. 
 
-Registration link and ZOOM link will be posted soon.
+<!-- Registration link and ZOOM link will be posted soon. -->
 
-<!-- Registration to the event [here](https://www.eventbrite.com/e/using-grenoble-university-computing-servers-with-r-tickets-135986361869).
+Registration to the event [here](https://www.eventbrite.com/e/r-in-grenoble-machine-learning-with-r-tickets-142471653551).
 
-Link to Zoom [here](https://univ-grenoble-alpes-fr.zoom.us/j/94572905155?pwd=L0FNM3lyOVR2bzVCRW1jQlo5WWFtdz09).
+Link to Zoom [here](https://univ-grenoble-alpes-fr.zoom.us/j/96646347750?pwd=Z2NOakZqWXpKMk9Lbjl0Sk14ajhwdz09).
 
-Attendance is totally free but registration is mandatory and is on a first come first serve basis.  -->
+<!-- Attendance is totally free but registration is mandatory and is on a first come first serve basis.  -->
 
 You can subscribe to our emailing list on the following link: [r-in-grenoble emailing list](https://listes.univ-grenoble-alpes.fr/sympa/subscribe/r-in-grenoble?previous_action=info).
 
@@ -79,7 +79,7 @@ Then in the main part of the presentation, M. Gueguen will present in which situ
   
   "25/02/2021", "Machine learning", 
   "Abstract to come", 
-  "O. François",
+  "C. Gain",
 
   "25/03/2021", "Data visualisation with {ggplot2}", "'The simple graph has brought more information to the data analyst’s mind than any other device.' --- John Tukey. {ggplot2} is one of today's most powerful data visualisation suite. In this tutorial we will learn the underlying philosophy behind {ggplot2}: the Grammar of Graphics. We will see how all types of graphs such as histograms, scatterplots, boxplots, probability densities etc. can be specified by a small set of shared parameters, and how understanding what these parameters are and how to use them will allow you to seamlessly produce powerful and complex graphs to better understand your data.", 
   "M. Rolland",
