@@ -78,7 +78,10 @@ Then in the main part of the presentation, M. Gueguen will present in which situ
   "P. Jedynak, M. Rolland",
   
   "25/02/2021", "Machine learning", 
-  "Abstract to come", 
+  "In this presentation, we will mainly focus on the supervised part of the machine learning. 
+More specifically, we will see how to use Deep Learning in R in order to solve supervised learning task.
+The presentation will first introduce briefly what supervised learning is and the conceptual idea behind Deep Learning.
+We will then present how to use deep learning in R using the framework Keras and solving image recognition task.", 
   "C. Gain",
 
   "25/03/2021", "Data visualisation with {ggplot2}", "'The simple graph has brought more information to the data analyst’s mind than any other device.' --- John Tukey. {ggplot2} is one of today's most powerful data visualisation suite. In this tutorial we will learn the underlying philosophy behind {ggplot2}: the Grammar of Graphics. We will see how all types of graphs such as histograms, scatterplots, boxplots, probability densities etc. can be specified by a small set of shared parameters, and how understanding what these parameters are and how to use them will allow you to seamlessly produce powerful and complex graphs to better understand your data.", 
