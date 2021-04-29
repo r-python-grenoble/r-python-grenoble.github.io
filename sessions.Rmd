@@ -2,13 +2,13 @@
 title: "Working sessions"
 ---
 
-Next session: **Machine learning in R, February 25th 2021 at 5PM on Zoom**. 
+Next session: **Version control and git for beginner, May 6th 2021 at 5PM on Zoom**. 
 
 <!-- Registration link and ZOOM link will be posted soon. -->
 
-Registration to the event [here](https://www.eventbrite.com/e/r-in-grenoble-machine-learning-with-r-tickets-142471653551).
+Registration to the event [here](https://www.eventbrite.com/e/r-in-grenoble-git-in-r-for-beginners-tickets-152812388969).
 
-Link to Zoom [here](https://univ-grenoble-alpes-fr.zoom.us/j/96646347750?pwd=Z2NOakZqWXpKMk9Lbjl0Sk14ajhwdz09).
+Link to Zoom [here](https://univ-grenoble-alpes-fr.zoom.us/j/95046952189?pwd=SWRScVljekZ0V1NBUHFmVlJFMXJ3Zz09).
 
 <!-- Attendance is totally free but registration is mandatory and is on a first come first serve basis.  -->
 
@@ -72,10 +72,7 @@ program <- tribble(
 
 Then in the main part of the presentation, M. Gueguen will present in which situations you may want to use such servers and how to do so in R. The presentation will be illustrated by several examples.", 
 "M. Gueguen, P-A. Bouttier",
-  
-  "28/01/2021", "Version control and git", 
-  "Abstract to come", 
-  "P. Jedynak, M. Rolland",
+
   
   "25/02/2021", "Machine learning", 
   "In this presentation, we will mainly focus on the supervised part of the machine learning. 
@@ -84,14 +81,21 @@ The presentation will first introduce briefly what supervised learning is and th
 We will then present how to use deep learning in R using the framework Keras and solving image recognition task.", 
   "C. Gain",
 
-  "25/03/2021", "Data visualisation with {ggplot2}", "'The simple graph has brought more information to the data analyst’s mind than any other device.' --- John Tukey. {ggplot2} is one of today's most powerful data visualisation suite. In this tutorial we will learn the underlying philosophy behind {ggplot2}: the Grammar of Graphics. We will see how all types of graphs such as histograms, scatterplots, boxplots, probability densities etc. can be specified by a small set of shared parameters, and how understanding what these parameters are and how to use them will allow you to seamlessly produce powerful and complex graphs to better understand your data.", 
+  "25/03/2021", "Data visualisation with {ggplot2}", "CANCELLED", 
   "M. Rolland",
   
   "29/04/2021", "Data manipulation with packages {dplyr} and {data.table}",
-  "Data manipulation is an essential step in any data analysis project. Core package of the tidyverse environment, {dplyr} provides a data manipulation framework that uses an intuitive syntax defined by a small set of verbs. In this tutorial we will learn how to pick observations by their values (filter()), reorder the rows (arrange()), pick variables by their name (select()), create new variables with functions of existing variables (mutate()), collapse many values down to a single summary (summarise()) and combine all these operations using the '%>%' (pipe) operator. This will help you solve the most common data manipulation challenges. **ADD data.table**", 
+  "CANCELLED", 
   "P. Jedynak & M. Rolland",
 
-  "27/05/2021", "Reproducible projects", "Abstract to come", "M. Rolland",
+  "06/05/2021", "Version control and git for beginners", 
+  "Git is a version control system whose original purpose was to help groups of developers work collaboratively on big software projects. Git manages the evolution of a set of files – called a repository – in a sane, highly structured way.  
+Git has been re-purposed by the data science community. In addition to using it for source code, we use it to manage the motley collection of files that make up typical data analytical projects, which often consist of data, figures, reports, and, yes, source code.  
+In this presentation aimed at beginners we will try to give you an understanding on what git is, how it is integrated in Rstudio and how it can help you make your projects more reproducible, enable you to share your code with the world and collaborate in a seamless manner.  
+(abstract strongly inspired by the intro from happygitwithr.com)", 
+  "P. Jedynak, M. Rolland",
+
+  "27/05/2021", "New presentation TBA", "Abstract to come", "XXX",
 
   "24/06/2021", "Time series", "Abstract to come", "A. Zaher"
 
