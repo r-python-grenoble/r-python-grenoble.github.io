@@ -8,7 +8,7 @@ Next session: **Version control and git for beginner, May 6th 2021 at 5PM on Zoo
 
 Registration to the event [here](https://www.eventbrite.com/e/r-in-grenoble-git-in-r-for-beginners-tickets-152812388969).
 
-Link to Zoom [here](https://univ-grenoble-alpes-fr.zoom.us/j/95046952189?pwd=SWRScVljekZ0V1NBUHFmVlJFMXJ3Zz09).
+Link to Zoom meeting [here](https://univ-grenoble-alpes-fr.zoom.us/j/95046952189?pwd=SWRScVljekZ0V1NBUHFmVlJFMXJ3Zz09).
 
 <!-- Attendance is totally free but registration is mandatory and is on a first come first serve basis.  -->
 
