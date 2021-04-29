@@ -202,6 +202,8 @@ div(
 
 #### 2020 - 2021
 
+- Machine learning in R: [video](https://www.youtube.com/watch?v=AkWb-toK1gE)
+
 - Using UGA servers with R: [GRICAD slides](https://bouttiep.gricad-pages.univ-grenoble-alpes.fr/slides/20210114_group-r.html), [Servers with R slides](presentation/RinGrenoble_RandCIMENT_20210114_GUEGUEN.pdf), [video](https://www.youtube.com/watch?v=Nido4_bZ3SE)
 
 - Alternatives to Rstudio: [slides](presentation/rstudio_alternatives.pdf), [video](https://youtu.be/UzjCy6cyRiI)
