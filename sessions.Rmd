@@ -3,10 +3,7 @@ title: "Working sessions"
 ---
 
 Next session: **Building dashboards in R/shiny (and improve them with logs and user feedback), May 25th 2021 at 5PM on Zoom**. 
-<<<<<<< HEAD
 
-=======
->>>>>>> 53698134582ee33283d9b34595dc3c8bd2a6f697
 <!-- Registration link and ZOOM link will be posted soon. -->
 
 Registration to the event [here](https://www.eventbrite.com/e/building-dashboards-in-rshiny-tickets-154255120217).
