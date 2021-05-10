@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>gitr</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="my-css-git-beginners.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# gitr
+
+---
+
+
+&lt;!--
+Notes for next time:
+* ajouter un passage sur le R2
+--&gt;
+
+
+
+
+
+
+
+&lt;!-- Goal of this presentation: not to teach you git but to make you want to learn it --&gt;
+&lt;!-- I am a biostatistician in a scientific research team, so the presentation I will make will reflect this very practical use --&gt;
+
+---
+
+# Git
+
+ &lt;!-- Disclaimer I am not an expert, I am not a software developer, I am a statistician in a research lab, I mainly do data analysis and paper writing --&gt;
+
+* Version control system 
+&lt;!-- Most popular version control control system; Like the word track change option but 10 times more powerful --&gt;
+&lt;!-- Its original purpose was to help groups of developers work collaboratively on big software projects. --&gt;
+&lt;!-- developed by Linus Torvald the developer of Linux, developed git to be able to develop linux --&gt;
+* Repository (repo) = data, figures, reports, and... source code  &lt;!-- Records changes made over time in a special data base called a repository --&gt;
+&lt;!-- It enables you to see your project history and who has made change when and why --&gt;
+&lt;!-- And if you make a mistake you can always switch your project back to an earlier state --&gt;
+* Collaboration &lt;!-- utile même pour soi même quand on travaille avec plusieurs ordi --&gt;
+* Free and open source
+* Command line tool but fully integrated in Rstudio
+
+--
+
+# GitHub / GitLab
+
+* Online hosting platforms for Git-based projects
+&lt;!-- They provide a home for your Git-based projects on the internet. --&gt;
+&lt;!-- Like DropBox but to the power 10 --&gt;
+* Remote repo  &lt;!-- very useful even when working solo on a project --&gt;
+* User friendly web interface &lt;!-- Especially useful when sharing code --&gt;
+* Special features
+  * Issues
+  * Pull-requests
+  * Create website
+  * etc
+
+&lt;!-- It allows other people to see your stuff, sync up with you, and perhaps even make changes. --&gt;
+&lt;!-- Github is the most popular and gitlab is often used academically for historical reasons --&gt;
+
+---
+
+# Architecture
+
+&lt;!-- A central server, several computers --&gt;
+
+![](collaboration_small.png)
+
+&lt;!-- With Git, all contributors have a copy of the repo, with all files and the full history. It is typical to stay in sync through the use of a central remote repo, such as GitHub. Hosted remotes like GitHub also provide access to the repo through a web browser. --&gt;
+
+Illustration from [happygitwithr](https://happygitwithr.com/)
+
+
+---
+
+# Why use Git and a hosting platform?
+
+* Reproducibility
+&lt;!-- One of the corner stones of reproducibility. For individual researchers, Git provides a powerful way to track and compare versions, retrace errors, explore new approaches in a structured manner. For larger collaborative efforts, Git and Git hosting services make it possible for everyone to work asynchronously and merge their contributions at any time, all the while maintaining a complete authorship trail. --&gt;
+* Security &lt;!-- online copy of your code --&gt;
+* Collaboration &lt;!-- more and more common in modern data science --&gt;
+* Sharing/Open science &lt;!-- for us we can easily share our publication code --&gt; 
+* Very well integrated in Rstudio &lt;!-- which removes a lot of the initial hassle/hurdles historically associated with git --&gt;
+
+--
+
+BUT
+
+* **installation and initial configuration can be complicated** (=&gt; [happygitwithr](https://happygitwithr.com/)) &lt;!-- this only needs to be done once --&gt; 
+* **it is an extra layer of complexity** &lt;!-- may not always be worth switching to git --&gt; 
+
+---
+
+# Vocabulary
+
+`repository...` set of files and folders tracked by git (aka **repo**)  
+`remote.......` online backup of your repo  
+`.git.........` folder that contains all the information that is necessary for your project in version control   &lt;!-- and all the information about commits, remote repository address  It also contains a log that stores your commit history so that you can roll back to history. --&gt;  
+`.gitignore...` file that specifies intentionally untracked files to ignore
+
+---
+
+# Commit
+
+&lt;!-- to save modifications of a repo you always have to do the two following steps stage and commit, so I will talk about these two actions as if they were one because in practice that's how it is --&gt;
+
+![](commits.png)
+
+&lt;!-- Partial commit history for our iris example, highlighting diffs, commit messages,
+SHAs, and tags --&gt;
+
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+
+Illustration from [happygitwithr](https://happygitwithr.com/)
+
+---
+
+# Push - Pull
+
+![](push_pull.png)
+&lt;br/&gt;
+
+&lt;!-- One contributor has made two new commits and updates the master copy on
+GitHub with a push. Another contributor stays up-to-date with a pull from GitHub. --&gt;
+
+--
+
+**ONLY COMMITTED MODIFICATIONS ARE PUSHED!!**
+&lt;br/&gt;
+&lt;br/&gt;
+
+Illustration from [happygitwithr](https://happygitwithr.com/)
+
+---
+
+# Vocabulary
+
+&lt;!-- git developed as a command line tool but you can (nearly) never use them when working in Rstudio --&gt;
+
+Main actions:
+
+`init.....` create a repo  
+`clone....` get a local copy of an existing repo   
+`add......` take snapshots of the local repo modifications (aka staging)  
+`commit...` save modifications locally  
+`push.....` send local modifications to remote  
+`pull.....` get collaborators' modifications on your local repo  
+
+Additionnal vocabulary:
+
+`hash.....` unique commit identifier  
+`diff.....` difference between two versions of the same file   
+
+---
+
+# Branches
+
+Allow for trial and error while maintaining a functional version
+
+![](branches.png)
+
+---
+
+# Branches
+
+![](octopus.jpeg)
+
+---
+
+# Vocabulary
+
+`master branch...` clean and functional version of the code  
+`merge...........` including modifications from a dev branch to the master branch  
+`conflict........` happens when lines of code differ between two merged branches  
+
+---
+
+![](versioning.png)
+
+Illustration from [happygitwithr](https://happygitwithr.com/)
+
+---
+
+# A few simple rules
+
+You should
+
+--
+
+* Commit frequently &lt;!-- you should often commit small, single changes with carefully crafted commit messages that tell what the small, discrete change is.  --&gt;
+
+--
+
+* Carefully write your commit comments
+
+--
+
+* Pull often &lt;!-- to keep your local machine as close to the remote repository as possible --&gt;
+
+--
+
+* Pull before you push  &lt;!--Doing so will ensure that your local copy is in sync with the remote repository.  You can do this as often as you like, and should do it frequently — at least once a day if not more.--&gt;
+
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+
+ref: [Rules for Good Git Hygiene](https://betterprogramming.pub/six-rules-for-good-git-hygiene-5006cf9e9e2)
+
+---
+
+# Git in IAB - Team 12
+
+* Each engineer, researcher, post-doc, etc has their own personnal account
+
+--
+
+* **!!NO DATA IS TRACKED!!** ==&gt; `/data` folder *always* in the `.gitignore` file
+
+--
+
+* Team account to share publication code and useful productions: 
+
+--
+
+![](iab-env-epi.png)
+
+---
+
+# How I use Git
+
+* One Rstudio project per analysis synchronised on my own GitLab account
+
+--
+
+* Upload code for my publications once they are online on the team's GitLab
+
+--
+
+* Share my code with researchers
+
+---
+
+# How I use Git
+
+`~/projects`
+
+--
+
+![](project-folder.png)
+
+---
+
+# How I use Git
+
+`~/projects/babylab`
+
+--
+
+![](babylab-folder.png)
+
+---
+
+# How I use Git
+
+`~/projects/babylab/.gitignore`
+
+--
+
+![](gitignore.png)
+
+---
+
+# How I use Git
+
+`www.gitlab.com`
+
+![](my-gitlab.png)
+
+---
+
+# Useful links
+
+* Great resource on all day to day uses, problems and diagnostics of git with R: https://happygitwithr.com/
+* Goog presentation in French: https://www.slideshare.net/VincentGuyader/git-rstudio-vincent-guyader
+* Scientific preprint publication on using git with R: https://doi.org/10.7287/peerj.preprints.3159v2
+* In depth youtube tutorial on Git: https://www.youtube.com/watch?v=8JJ101D3knE
+* Our teams public GitLab page: https://gricad-gitlab.univ-grenoble-alpes.fr/iab-env-epi
+
+---
+
+![](github.gif) 
+
+&lt;!-- Transition to Pau  --&gt;
+
+&lt;!-- 
+Now the bad news: Git was built neither for the exact usage described here, nor for
+broad usability. You will undoubtedly notice this, so it's best to know in advance. Happily,
+there are many helpful tools that mediate your interactions with Git. GitHub itself is a
+ne example, as is RStudio (RStudio Integrated Desktop Environment n.d.). In addition
+to pointing out tools that soften Git's sharpest edges, I recommend specic habits and
+attitudes that reduce frustration.
+--&gt;
+
+&lt;!-- Show: --&gt;
+
+&lt;!-- Init, clone, stage, commit, push, pull, diff, history --&gt;
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
