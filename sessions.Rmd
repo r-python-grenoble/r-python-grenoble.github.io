@@ -98,14 +98,10 @@ In this presentation aimed at beginners we will try to give you an understanding
 (abstract strongly inspired by the intro from happygitwithr.com)", 
   "P. Jedynak, M. Rolland",
 
-<<<<<<< HEAD
   "25/05/2021", "Building dashboards in R/shiny (and improve them with logs and user feedback)", 
   "The main goal of this seminar is to demonstrate how R/Shiny app developers can collect data from the visitors of their app (such as logs or feedback) to improve it. 
 We will use as example the CaDyCo project, a dynamic and collaborative cartography project hosted by USMB and UGA.", 
-  "TBA",
-=======
-  "27/05/2021", "Building dashboards in R/shiny", "The main goal of this seminar is to demonstrate how R/Shiny app developers can collect data from the visitors of their app (such as logs or feedback) to improve it. We will use as example the CaDyCo project, a dynamic and collaborative cartography project hosted by USMB and UGA.", "M. Kaufman, N. Ricci",
->>>>>>> 53698134582ee33283d9b34595dc3c8bd2a6f697
+  "M. Kaufman, N. Ricci",
 
   "24/06/2021", "Time series", "Abstract to come", "A. Zaher"
 
