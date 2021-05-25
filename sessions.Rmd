@@ -205,7 +205,7 @@ div(
 
 #### 2020 - 2021
 
-- Building dashboards in R/shiny (and improve them with logs and user feedback): [slides](presentation/Cadyco_R_in_Grenoble_2021-05-25_v1.pdf)
+- Building dashboards in R/shiny (and improve them with logs and user feedback): [slides](presentation/Cadyco_R_in_Grenoble_2021-05-25_v1.pdf), [data](presentation/export_Rdata_25_May)
 
 - Git in R for beginners: [video](https://www.youtube.com/watch?v=EYHNuljz7Fo), [slides](presentation/git-github/git_for_beginners.html)
 
