@@ -2,13 +2,13 @@
 title: "Working sessions"
 ---
 
-Next session: **Building dashboards in R/shiny (and improve them with logs and user feedback), May 25th 2021 at 5PM on Zoom**. 
+Next session: **Time series analysis, June 24th 2021 at 5PM on Zoom**. 
 
 <!-- Registration link and ZOOM link will be posted soon. -->
 
-Registration to the event [here](https://www.eventbrite.com/e/building-dashboards-in-rshiny-tickets-154255120217).
+Registration to the event [here](https://www.eventbrite.com/e/r-in-grenoble-time-series-tickets-159887665311).
 
-Link to Zoom [here](https://univ-grenoble-alpes-fr.zoom.us/j/96936670308?pwd=TTV3THBYQmZ2TnBIRlpHRlNrQ0FOUT09).
+Link to Zoom [here](https://univ-grenoble-alpes-fr.zoom.us/j/99312884863?pwd=b3RrdEFqdWp5dzdLVzN2Vk94ZytKQT09).
 
 <!-- Attendance is totally free but registration is mandatory and is on a first come first serve basis.  -->
 
@@ -100,7 +100,10 @@ In this presentation aimed at beginners we will try to give you an understanding
 We will use as example the CaDyCo project, a dynamic and collaborative cartography project hosted by USMB and UGA.", 
   "M. Kaufman, N. Ricci",
 
-  "24/06/2021", "Time series", "Abstract to come", "A. Zaher"
+  "24/06/2021", "Time series", "
+Time series data correspond to a sequence taken at successive and equidistant points in time, and their applications include several domains in which we deal with this temporal dimension. In this session, we will give an introduction to the general process of analyzing a time series data in R, starting with the visualization through different methods and packages, then we will discuss the processing stage, and finally arrive at the modeling and forecasting step.
+
+The most relevant used packages are: tsdl for uploading time series data; zoo and xts for reading and arranging data as time series; lattice, latticeExtra for static graphics; RColorBrewer for defining color palettes; and packages dygraphs, highcharter, and plotly, based on the htmlwidgets framework, for interactive graphics.", "A. Zaher"
 
 ) %>%
   mutate(Date = dmy(Date)) 
@@ -204,6 +207,8 @@ div(
 ### Materials from previous sessions
 
 #### 2020 - 2021
+
+- Time Series: [tutorial](https://github.com/zaher-stat/R_in_Grenoble-Time_Series_Talk)
 
 - Building dashboards in R/shiny (and improve them with logs and user feedback): [slides](presentation/Cadyco_R_in_Grenoble_2021-05-25_v1.pdf), [data](presentation/export_Rdata_25_May)
 
